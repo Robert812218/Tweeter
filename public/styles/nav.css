@@ -1,0 +1,41 @@
+/* #nav {
+  font-family: 'Bungee', cursive;
+} */
+
+.navBar {
+  position: relative;
+  font-family: '';
+  height: 120px;
+  width: 100%;
+  background-color: #405A61;
+  color: #FFFFFF;
+  z-index: 5;
+  /* left: 1.5em; */
+}
+
+.navSpan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 1.5em;
+  top: 0.5em;
+  padding-right: 1.5em;
+  font-family: 'Bungee', cursive;
+}
+
+.navContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* padding: 1.5em; */
+  color: red;
+  align-items: center;
+  left: 30%;
+  padding-right: 1.5em;
+  bottom: 20%;
+}
+
+
+
+/* font-family: 'Bungee', cursive;
+font-family: 'Source Sans Pro', sans-serif; */
