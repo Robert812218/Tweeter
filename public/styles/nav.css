@@ -3,7 +3,7 @@
 } */
 
 .navBar {
-  position: relative;
+  position: fixed;
   font-family: '';
   height: 120px;
   width: 100%;

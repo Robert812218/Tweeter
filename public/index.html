@@ -19,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -63,17 +66,55 @@
     
 
     <section class="new-tweet">
-      <h2 class="tweetTitle">Compose Tweet</h2>
+      <h2 class="tweet-title">Compose Tweet</h2>
       <form>
         <label for="tweet-text" class="tweet-label">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
         <div>
           <button type="submit" id="tweet-button">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+          <output name="counter" class="counter" for="tweet-text" id="number-count">140</output>
         </div>
       </form>
     </section>
 
+    <br>
+    <br>
+    <!-- <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-flag"></i>
+        <i class="fa-solid fa-retweet"></i>
+     -->
 
-  </body>
+    <section class="other-tweets">
+
+      <article class="old-tweet">
+        <header>
+          <div class="thumbnail">USER_NAME</div>
+          <div class="handle">@Tweetertonn5556</div>
+        </header>
+        <content>
+          <div class="inner-box">Fix the CSS later</div>
+        </content>
+        <footer>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-flag"></i>
+          <i class="fa-solid fa-retweet"></i>
+        </footer>
+      </article>
+      
+
+
+      <!-- <article class="old-tweet"></article>
+      <br>
+      <article class="old-tweet"></article>
+      <br>
+      <article class="old-tweet"></article>
+      <br>
+      <article class="old-tweet"></article>
+      <br>
+      <article class="old-tweet"></article>
+      <br> -->
+      
+
+
+  </section>
 </html
