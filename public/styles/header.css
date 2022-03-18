@@ -1,11 +1,34 @@
 .headerContain {
   display: flex;
-  justify-content: center;
-  height: 400px;
-  width: 100%;
 
+  align-items: center;
+  justify-content: center;
+  
 }
 
-.profPic {
+.profileName {
+  display: flex;
+  color: red;
+  background-color: black;
+  align-self: center;
+  border: 5px solid gold;
+  margin-bottom: 40px;
+  font-size: 2em;
+  text-size-adjust: 500%;
+  justify-content: center;
+  font-family: 'Monoton', cursive;
+}
+
+.profilePicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profilePic {
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  
   
 }

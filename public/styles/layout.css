@@ -8,6 +8,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+
 }
 
 /*
@@ -22,13 +23,76 @@ body {
   
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  
+ 
+  
 }
 /* If neither Bungee or Sans-Serif,  */
 
 .container {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 90%;
+  left: 5%;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
+  
+}
+
+.new-tweet {
+  position: relative;
+  /* display: flex;
+  justify-content: space-between; */
+  border-style: outset;
+  /* display: flex;
+  align-self: auto;  */
+  /* justify-content: space-evenly; */
+  width: 90%;
+  left: 5%;
+  background-color: yellow;
+  max-height: 15rem;
+  /* height: 7em; */
+
+
+  /* height: 3000px; */
+}
+
+.tweetTitle {
+  border-style: solid;
+  border-bottom: 5px dotted purple;
+}
+
+.tweet-label {
+  border-bottom: 5px solid black;
+  margin-right: 500px;
+  margin-bottom: 500px;
+}
+
+#tweet-text {
+  display: flex;
+  width: 70%;
+  border-style: outset;
+  box-shadow: 3px 3px 3px 3px gray;
+  margin-left: 15px;
+  
+  padding-bottom: 10px;
+}
+
+#tweet-button {
+  background-color: blue;
+}
+
+#text-num {
+  size-adjust: 500%;
+}
+
+.redText {
+  color: red;
 }
 
 /*
