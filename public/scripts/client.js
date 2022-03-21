@@ -45,19 +45,13 @@ $(document).ready(function() {
   }
   // fix this
   const createTweetElement = function(tweet) {
-    // console.log("Tweet Object received", tweet);
-    // console.log(`Name: ${tweet.user.name}`);
-    // console.log(`Image: ${tweet.user.avatars}`);
-    // console.log(`Handle: ${tweet.user.handle}`);
 
-    // console.log(`Content: ${tweet.content.text}`);
-    // console.log(`Created at: ${tweet.created_at}`);
-    
+    let $heartIcon = $("#heart-icon")
 
     let $tweet = $(`<article class="old-tweet">
       <header>
         <div class="thumbnail">${tweet.user.name}</div>
-        <div>${tweet.user.avatars}</div>
+        <div><img src="${tweet.user.avatars}"></img></div>
         <div class="handle">${tweet.user.handle}</div>
       </header>
     <content>
@@ -65,9 +59,9 @@ $(document).ready(function() {
       <div>${tweet.created_at}</div>
     </content>
     <footer>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div><i class="fa-solid fa-heart"></i></div>
+      <div><i class="fa-solid fa-flag"></i></div>
+      <div><i class="fa-solid fa-retweet"></i></div>
     </footer>
     </article>`);
   
@@ -76,4 +70,41 @@ $(document).ready(function() {
   
   renderTweets(data);
 });
-// Fake data taken from initial-tweets.json
+
+// add an event listener that listens for the submit event
+// prevent the default behaviour of the submit event (data submission and page refresh)
+// create an AJAX POST request in client.js that sends the form data to the server.
+
+$(document).submit(function(event) {
+  event.preventDefault();
+
+  const createPost = (posts) => {
+    const $header = $(`
+    <header>
+        <div class="thumbnail">${post.user.name}</div>
+        <div><img src="${tweet.user.avatars}"></img></div>
+        <div class="handle">${post.user.handle}</div>
+      </header>
+    `);
+    const $content = $(`
+    <content>
+      <div>${tweet.content.text}</div>
+      <div>${tweet.created_at}</div>
+    </content>
+    `);
+    const $footer = $(`
+    <footer>
+      <div><i class="fa-solid fa-heart"></i></div>
+      <div><i class="fa-solid fa-flag"></i></div>
+      <div><i class="fa-solid fa-retweet"></i></div>
+    </footer>
+    `);
+    const $post = $('<article class="old-tweet"></article>');
+    $post.append($header, $content, $footer);
+    return $post;
+  }
+
+
+
+
+});
