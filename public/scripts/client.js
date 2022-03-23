@@ -8,6 +8,8 @@
 // const { append } = require("express/lib/response");
 // const res = require("express/lib/response");
 $(document).ready(function() {
+  // loadTweets();
+
   const data = [
     {
       "user": {
@@ -53,6 +55,7 @@ $(document).ready(function() {
 
     let $bottom = $(`
       <footer>
+        <span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z">July 07, 2016</span>
         <div><i class="fa-solid fa-heart"></i></div>
         <div><i class="fa-solid fa-flag"></i></div>
         <div><i class="fa-solid fa-retweet"></i></div>
@@ -80,11 +83,11 @@ $(document).ready(function() {
 
   renderTweets(data);
 
-  const fetchTweets = () => {
-    $.ajax({
+  const loadTweets = () => {
+    $.ajax('/tweets', {
       method: "GET",
-      dataType: "json",
-      url: "../index.html",
+      // dataType: "json",
+      // url: "localhost:8080/routes/tweets.js",
       success: posts => {
         console.log(posts)
         renderTweets(posts)
@@ -93,23 +96,49 @@ $(document).ready(function() {
     });
   }
 
-  fetchTweets();
+  loadTweets();
 
-  const form = $('#createPostForm');
-  form.on('submit', function(event) {
+  // const loadTweets = function() {   
+  // $.getJSON('http://localhost:8080/tweets')
+  // .then(function(tweets) {
+  //   renderTweets(tweets);
+  // });
 
+  
+
+  const $form = $('#new-tweet-form');
+  $form.on('submit', function(event) {
     event.preventDefault();
     console.log(event);
+
+
+
     const serializedData = $(this).serialize();
-    console.log(serializedData);
+    $txt = $('#tweet-text').val().trim().length;
 
-    $.post('../index.html', serializedData)
-    .then((resp) => {
-      console.log(resp);
-      fetchPosts();
-    });
+    if (!$txt) {
+      $("#tweet-text").html("Write a new tweet!");
+      // alert('Write a new tweet!');
+      // $textForm.focus();
 
-    this.reset();
+      
+    } else if ($txt > 140) {
+
+      $("textarea").css("background-color", "red");
+      $("#error-1").html("Tweet must be 140 characters or less");
+      
+    } else {
+        $.ajax('/tweets', {
+          method: "POST",
+          data: serializedData
+        }).then((resp) => {
+        console.log("SHE'S WORKIN'");
+        $('#number-count').val(140)
+        loadTweets();
+      });
+
+      this.reset();
+    }
   });
 
   console.log("Hello!");

@@ -28,10 +28,13 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+
     
   </head>
 
@@ -67,7 +70,7 @@
 
     <section class="new-tweet">
       <h2 class="tweet-title">Compose Tweet</h2>
-      <form>
+      <form id="new-tweet-form">
         <label for="tweet-text" class="tweet-label">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
         <div>
@@ -75,6 +78,7 @@
           <output name="counter" class="counter" for="tweet-text" id="number-count">140</output>
         </div>
       </form>
+      <h2 id="error-1"></h2>
     </section>
 
     <br>
