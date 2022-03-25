@@ -126,6 +126,7 @@ $(document).ready(function() {
 
       $("textarea").css("background-color", "red");
       $("#error-1").html("Tweet must be 140 characters or less");
+      $("#error-1").css("border", "5px dotted red");
       
     } else {
         $.ajax('/tweets', {
@@ -143,7 +144,3 @@ $(document).ready(function() {
 
   console.log("Hello!");
 });
-
-// add an event listener that listens for the submit event
-// prevent the default behaviour of the submit event (data submission and page refresh)
-// create an AJAX POST request in client.js that sends the form data to the server.

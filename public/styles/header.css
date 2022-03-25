@@ -8,10 +8,10 @@
 
 .profileName {
   display: flex;
-  color: red;
-  background-color: black;
+  color: gold;
+  background-color: gray;
   align-self: center;
-  border: 5px solid gold;
+  border: 5px solid blue;
   margin-bottom: 40px;
   font-size: 2em;
   text-size-adjust: 500%;
