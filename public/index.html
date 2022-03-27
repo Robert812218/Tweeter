@@ -67,41 +67,49 @@
     <br>
     <br>
     
-    
-    <section class="new-tweet">
-      <div>
-        <h2 class="tweet-title">Compose Tweet</h2>
+  <section class="all-tweets">
+
+
+      <section class="new-tweet">
+        <div class="tweet-title">
+          <h1>Compose Tweet</h1>
+        </div>
         <form id="new-tweet-form">
-          <label for="tweet-text" class="tweet-label">What are you humming about?</label>
+          <label for="tweet-text" class="tweet-label"></label>
           <textarea name="text" id="tweet-text"></textarea>
-          <div>
+          <div class="button-and-counter">
             <button type="submit" id="tweet-button">Tweet</button>
             <output name="counter" class="counter" for="tweet-text" id="number-count">140</output>
           </div>
         </form>
-        <h2 id="error-1"></h2>
+        <div class="error-container">
+          <h3 id="error-1">What are you humming about?</h3>
+        </div>
+        
       </section>
     </div>
     <br>
     <br>
 
 
-    <section class="other-tweets">
+      <div class="other-tweets">
 
-      <article class="old-tweet">
-        <header>
-          <div class="thumbnail"></div>
-          <div class="handle"></div>
-        </header>
-        <content>
-          <div class="inner-box"></div>
-        </content>
-        <footer>
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-flag"></i>
-          <i class="fa-solid fa-retweet"></i>
-        </footer>
-      </article>
-    
+        <article class="old-tweet">
+          <header>
+            <div class="thumbnail">Randy Savage</div>
+            <div class="handle">@RandySavage</div>
+          </header>
+          <content>
+            <div class="inner-box">"Sky's the limit and space is the place!"</div>
+          </content>
+          <footer>
+            <div>March 27, 2022</div>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+          </footer>
+        </article>
+      
+      </div>
   </section>
 </html>

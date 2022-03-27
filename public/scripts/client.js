@@ -49,13 +49,13 @@ $(document).ready(function() {
     let $body = $(`
       <content>
         <div>${tweet.content.text}</div>
-        <div>${tweet.created_at}</div>
       </content>
     `);
 
     let $bottom = $(`
       <footer>
-        <span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z">July 07, 2016</span>
+      <div>ID: ${tweet.created_at}</div>
+        <span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z">March 27, 2022</span>
         <div><i class="fa-solid fa-heart"></i></div>
         <div><i class="fa-solid fa-flag"></i></div>
         <div><i class="fa-solid fa-retweet"></i></div>
@@ -126,7 +126,8 @@ $(document).ready(function() {
 
       $("textarea").css("background-color", "red");
       $("#error-1").html("Tweet must be 140 characters or less");
-      $("#error-1").css("border", "5px dotted red");
+      $("#error-1").css("border", "5px outset silver");
+      $("#error-1").css("padding", "20px");
       
     } else {
         $.ajax('/tweets', {

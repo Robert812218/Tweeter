@@ -46,41 +46,50 @@ body {
   
 }
 
-.new-tweet {
+.all-tweets {
   position: relative;
-  left: 25%;
-  right: 25%
-  /* display: flex; */
-  
-  border-style: outset;
-  
-  width: 90%;
-  max-width: 2000px;
   left: 5%;
-  background-color: gray;
-  min-height: 15rem;
+  width: 90%;
+  height: 90%;
+  background-color: silver;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-tweet {  
+  width: 1000px;
+  /* width: 50%; */
+  left: 5%;
+  background-color: darkgrey;
+  min-height: 22.5rem;
+  max-height: 50rem;
+  border: 5px outset silver;
+}
+
+.new-tweet:hover {
+  box-shadow: 3px 3px 3px 3px rgb(37, 36, 36);
 }
 
 .tweet-title {
-  border-style: solid;
-  border-bottom: 5px outset black;
-  margin-bottom: 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   font-family: 'Coda Caption', sans-serif;
+  border: 5px outset gainsboro;
 }
 
 .tweet-label {
-  position: relative;
-  left: 3%;
-  border-bottom: 5px solid black;
-  padding-right: 35%;
-  border-right-width: 200px;
-  width: 1000px;
+  background-color: blue;
   font-family: 'Coda Caption', sans-serif;
 }
 
 #tweet-text {
-  display: flex;
-  width: 70%;
+  width: 95%;
+  height: 6em;
+  /* left: 5%; */
   border-style: outset;
   box-shadow: 3px 3px 3px 3px gray;
   margin-left: 15px;
@@ -92,51 +101,62 @@ body {
 
 
 #tweet-button {
-  position: relative;
-  left: 2rem;
-  background-color: white;
+
+  /* background-color: #6495ED; */
+  background-color: gray;
+  
 }
 
 #number-count {
-  position: relative;
-  left: 50%;
   border: 5px outset silver;
-  margin-bottom: 5px;
 }
+
+.button-and-counter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  width: 80%;
+  left: 10%;
+}
+
+.error-container {
+  border: 5px outset gray;
+  background-color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#error-1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+
 
 .redText {
   color: red;
 }
 
-/*  old tweets */
-
-.other-tweets {
-  position: relative;
-  left: 5%;
-  width: 90%;
-  height: 2000px;
-  background-color: silver;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
 .old-tweet {
-
+  padding: 1em;
+  align-self: center;
+  width: 60em;
   margin-top: 10px;
   margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(25, 1fr);
   background-color: darkgrey;
-  width: 100%;
+  /* width: 100%; */
+  
   max-width: 2000px;
-  height: 20rem;
+  max-height: 25rem;
   border: 5px outset silver;
-  /* padding-bottom: 20px;
-  padding-right: 20px; */
+  margin: 3em;
 }
 
 .old-tweet header {
@@ -164,12 +184,16 @@ body {
 
 .inner-box {
   position: relative;
-  /* border-bottom: 5px solid black; */
+  left: 26%;
   top: 10%;
   width: 90%;
   height: 80%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+
+.old-tweet .created-at {
+  
 }
 
 .old-tweet footer {
