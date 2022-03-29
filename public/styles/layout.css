@@ -58,7 +58,9 @@ body {
   align-items: center;
 }
 
-.new-tweet {  
+.new-tweet {
+  color: black;
+  /* color: blue; */
   width: 1000px;
   /* width: 50%; */
   left: 5%;
@@ -101,10 +103,8 @@ body {
 
 
 #tweet-button {
-
   /* background-color: #6495ED; */
   background-color: gray;
-  
 }
 
 #number-count {
@@ -134,8 +134,6 @@ body {
   justify-content: center;
   color: black;
 }
-
-
 
 .redText {
   color: red;
@@ -190,10 +188,6 @@ body {
   height: 80%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-}
-
-.old-tweet .created-at {
-  
 }
 
 .old-tweet footer {
