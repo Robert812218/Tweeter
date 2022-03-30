@@ -69,10 +69,6 @@ $(document).ready(function() {
   }
 
   const renderTweets = function(tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
-      //console.log("We are in the render Tweets");
     $container = $('.other-tweets');
     tweets.forEach(tweet => {
       const $tweet = createTweetElement(tweet);
@@ -86,8 +82,6 @@ $(document).ready(function() {
   const loadTweets = () => {
     $.ajax('/tweets', {
       method: "GET",
-      // dataType: "json",
-      // url: "localhost:8080/routes/tweets.js",
       success: posts => {
         console.log(posts)
         renderTweets(posts)
@@ -97,14 +91,6 @@ $(document).ready(function() {
   }
 
   loadTweets();
-
-  // const loadTweets = function() {   
-  // $.getJSON('http://localhost:8080/tweets')
-  // .then(function(tweets) {
-  //   renderTweets(tweets);
-  // });
-
-  
 
   const $form = $('#new-tweet-form');
   $form.on('submit', function(event) {
@@ -118,9 +104,6 @@ $(document).ready(function() {
 
     if (!$txt) {
       $("#tweet-text").html("Write a new tweet!");
-      // alert('Write a new tweet!');
-      // $textForm.focus();
-
       
     } else if ($txt > 140) {
 
@@ -128,6 +111,8 @@ $(document).ready(function() {
       $("#error-1").html("Tweet must be 140 characters or less");
       $("#error-1").css("border", "5px outset silver");
       $("#error-1").css("padding", "20px");
+      $("#error-1").css("background-color", "red");
+      $("#number-count").css("font-weight", "bold");
       
     } else {
         $.ajax('/tweets', {

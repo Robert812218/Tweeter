@@ -23,10 +23,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 #profilePic {
-  width: 15rem;
+  width: 20rem;
   justify-content: center;
   align-items: center;
   

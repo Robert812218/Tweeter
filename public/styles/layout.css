@@ -22,35 +22,29 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
   
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
-  
-  
-  
+  font-family: 'Source Sans Pro', 'sans-serif';
 }
 /* If neither Bungee or Sans-Serif,  */
 
 .container {
   padding-top: 120px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  /* position: relative;
   justify-content: center;
   width: 90%;
   left: 5%;
-  
   align-items: center;
-  justify-content: center;
-  background-color: gray;
+  justify-content: center; */
+  background-color: gold;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
   
   
 }
 
 .all-tweets {
-  position: relative;
+  /* position: relative;
   left: 5%;
   width: 90%;
-  height: 90%;
+  height: 90%; */
   background-color: silver;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='58' viewBox='0 0 42 58'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M12 18h12v18h6v4H18V22h-6v-4zm-6-2v-4H0V0h36v6h6v36h-6v4h6v12H6v-6H0V16h6zM34 2H2v8h24v24h8V2zM6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM2 50h32v-8H10V18H2v32zm28-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/g%3E%3C/svg%3E");
   display: flex;
@@ -60,11 +54,9 @@ body {
 
 .new-tweet {
   color: black;
-  /* color: blue; */
   width: 1000px;
-  /* width: 50%; */
   left: 5%;
-  background-color: darkgrey;
+  background-color: #0C6AED;
   min-height: 22.5rem;
   max-height: 50rem;
   border: 5px outset silver;
@@ -76,7 +68,6 @@ body {
 
 .tweet-title {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   align-items: center;
   font-family: 'Coda Caption', sans-serif;
@@ -122,7 +113,7 @@ body {
 
 .error-container {
   border: 5px outset gray;
-  background-color: silver;
+  background-color: gold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,9 +139,8 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(25, 1fr);
-  background-color: darkgrey;
+  background-color: #0C6AED;
   /* width: 100%; */
-  
   max-width: 2000px;
   max-height: 25rem;
   border: 5px outset silver;
@@ -158,6 +148,7 @@ body {
 }
 
 .old-tweet header {
+  background-color: gold;
   display: flex;
   justify-content: space-between;
   grid-column-start: 1;
@@ -169,6 +160,7 @@ body {
 }
 
 .old-tweet content {
+  background-color: gold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,6 +183,7 @@ body {
 }
 
 .old-tweet footer {
+  background-color: gold;
   grid-column-start: 4;
   grid-column-end: 7;
   grid-row-start: 20;
@@ -200,12 +193,7 @@ body {
   justify-content: space-around;
   border: 5px groove gainsboro;
   margin: 0.5rem;
-
 }
-
-
-
-
 
 .fa-heart:hover {
   color: red;
@@ -223,6 +211,76 @@ body {
   box-shadow: 3px 3px 3px 3px rgb(37, 36, 36);
 }
 
-/*  
- font-family: 'Bungee', cursive;
- font-family: 'Source Sans Pro', sans-serif; */
+/* Smartphone */
+@media only screen and min-width: 320px) and (max-width: 420px) { 
+  .all-tweets { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    position: relative;
+    justify-content: center;
+    width: 90%;
+    left: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+} 
+
+@media only screen and (max-width: 420px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    position: relative;
+    justify-content: center;
+    width: 90%;
+    left: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .all-tweets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .body {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+  }
+
+  .container {
+    grid-column-start: 5;
+    grid-column-end: 30;
+    grid-row-start: 10;
+    grid-row-end: 20;
+    
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    justify-content: center;
+    width: 90%;
+    left: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .all-tweets {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+}
