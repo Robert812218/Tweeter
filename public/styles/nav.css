@@ -1,8 +1,7 @@
 .navBar {
   position: fixed;
   font-family: '';
-  height: 12%;
-  width: 100%;
+  
 
   color: #FFFFFF;
   z-index: 5;

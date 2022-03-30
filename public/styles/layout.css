@@ -224,34 +224,9 @@ body {
   }
 } 
 
-@media only screen and (max-width: 420px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navBar {
-    
-  }
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) {
-  /* .all-tweets {
-    display: flex;
-    flex-direction: column;
-  } */
-}
-
-/* Small laptop */
-/* @media only screen and (min-width: 1024px) {
-  
-} */
-
 /* Desktop */
 @media only screen and (min-width: 1024px) {
 
-  /* using flex to position */
   body {
     display: flex;
     align-content: space-evenly;
@@ -275,11 +250,9 @@ body {
 
   }
 
-  .profilePicContainer {
-    
-  }
-
   .navBar {
     background-color: blue;
+    height: 12%;
+    width: 100%;
   }
 }
