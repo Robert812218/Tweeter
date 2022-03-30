@@ -1,23 +1,19 @@
-/* #nav {
-  font-family: 'Bungee', cursive;
-} */
-
 .navBar {
   position: fixed;
   font-family: '';
-  height: 120px;
+  height: 12%;
   width: 100%;
-  background-color: blue;
+
   color: #FFFFFF;
   z-index: 5;
-  
-  /* left: 1.5em; */
+ 
+
 }
 
 .navSpan {
   position: relative;
   display: flex;
-  flex-direction: column;
+
   left: 1.5em;
   top: 0.5em;
   padding-right: 1.5em;
@@ -28,15 +24,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  /* padding: 1.5em; */
+
   color: gold;
-  align-items: center;
-  left: 30%;
+  align-items: flex-end;
+
   padding-right: 1.5em;
-  bottom: 20%;
+
 }
-
-
-
-/* font-family: 'Bungee', cursive;
-font-family: 'Source Sans Pro', sans-serif; */
