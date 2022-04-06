@@ -46,8 +46,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  /* justify-content: space-between; */
 }
 
 .new-tweet {
@@ -127,11 +125,8 @@ body {
 }
 
 .old-tweet {
-  /* max-width: 90%; */
   padding: 1em;
   align-self: center;
-  /* width: 60em;  */
-  /* width: 60%; */
   margin-top: 10px;
   margin-bottom: 10px;
   display: grid;

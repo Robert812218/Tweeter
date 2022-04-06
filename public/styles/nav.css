@@ -1,18 +1,13 @@
 .navBar {
   position: fixed;
   font-family: '';
-  
-
   color: #FFFFFF;
   z-index: 5;
- 
-
 }
 
 .navSpan {
   position: relative;
   display: flex;
-
   left: 1.5em;
   top: 0.5em;
   padding-right: 1.5em;
@@ -23,10 +18,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
   color: gold;
   align-items: flex-end;
-
   padding-right: 1.5em;
-
 }

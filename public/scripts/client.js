@@ -1,15 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-// const text = require("body-parser/lib/types/text");
-// const { append } = require("express/lib/response");
-// const res = require("express/lib/response");
 $(document).ready(function() {
-  // loadTweets();
-
   const data = [
     {
       "user": {
@@ -35,8 +24,7 @@ $(document).ready(function() {
     }
   ]
   
-  
-  // fix this
+
   const createTweetElement = function(tweet) {
     let $top = $(`
       <header>
@@ -78,7 +66,6 @@ $(document).ready(function() {
   }
 
   renderTweets(data);
-
   const loadTweets = () => {
     $.ajax('/tweets', {
       method: "GET",
@@ -95,15 +82,16 @@ $(document).ready(function() {
   const $form = $('#new-tweet-form');
   $form.on('submit', function(event) {
     event.preventDefault();
-    console.log(event);
-
-
 
     const serializedData = $(this).serialize();
     $txt = $('#tweet-text').val().trim().length;
 
     if (!$txt) {
-      $("#tweet-text").html("Write a new tweet!");
+      $("#error-1").html("Tweet must be greater than zero characters, buddy");
+      $("#error-1").css("border", "5px outset silver");
+      $("#error-1").css("padding", "20px");
+      $("#error-1").css("background-color", "red");
+      $("#number-count").css("font-weight", "bold");
       
     } else if ($txt > 140) {
 
@@ -115,18 +103,16 @@ $(document).ready(function() {
       $("#number-count").css("font-weight", "bold");
       
     } else {
+      this.reset();
         $.ajax('/tweets', {
           method: "POST",
           data: serializedData
         }).then((resp) => {
-        console.log("SHE'S WORKIN'");
         $('#number-count').val(140)
         loadTweets();
       });
-
-      this.reset();
+      
     }
   });
 
-  console.log("Hello!");
 });
